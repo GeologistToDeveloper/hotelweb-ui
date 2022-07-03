@@ -1,0 +1,15 @@
+.searchBar {
+    position: relative;
+    top: 12vh;
+    width: 60vw;
+    margin-left: 20vw;
+    height: 5vh;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    transition: all 1s;
+    text-indent: 1rem;
+}
+
+.searchBar:focus {
+    transform: scale(1.2);
+}

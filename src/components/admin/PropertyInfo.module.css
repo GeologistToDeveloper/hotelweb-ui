@@ -1,0 +1,17 @@
+.image {
+    position: relative;
+    top: 10vh;
+    height: 25vw;
+    width: 50vw;
+    object-fit: cover;
+}
+
+.title {
+    position: relative;
+    top: 10vh;
+}
+
+.line {
+    position: relative;
+    top: 10vh;
+}

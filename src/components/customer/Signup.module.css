@@ -1,0 +1,50 @@
+
+.showPassword {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    background-color: transparent;
+    border: none;
+}
+
+.btn{
+    margin-top: 2vh;
+    height: 5vh;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    border-radius: 0.5vh;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    background-color: rgb(238, 194, 24);
+    color: rgb(0, 53, 95);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.ownBtn{
+    margin-top: 2vh;
+    height: 5vh;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+    border-radius: 0.5vh;
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    background-color: rgb(0, 53, 95);
+    color: rgb(238, 194, 24);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.ownBtn:hover {
+    transform: scale(1.05);
+}

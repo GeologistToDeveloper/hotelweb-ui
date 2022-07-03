@@ -1,0 +1,66 @@
+.card {
+    position: relative;
+    border-radius: 1rem;
+    border: 0.2rem black solid;
+    margin: 2vh;
+    height: auto;
+    width: 30vw;
+    transition: all 0.2s;
+}
+
+.card img {
+    object-fit: cover;
+    height: 17vw;
+    width: 28vw;
+    margin: auto;
+    border-radius: 1rem;
+    position: relative;
+    top: 1rem;
+    left: 3%;
+}
+
+.card .editBtn {
+    background: transparent;
+    border: 0.2rem solid black;
+    border-radius: 100%;
+    visibility: hidden;
+    position: absolute;
+    z-index: 50;
+    right: 2%;
+    top: 2%;
+    cursor: pointer;
+    
+}
+
+.card .infoBtn {
+    background: transparent;
+    border: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 50;
+    left: 2%;
+    top: 2%;
+    cursor: pointer;
+  
+}
+
+.deleteBtn {
+    background: transparent;
+    border: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 50;
+    left: 42%;
+   bottom: 2%;
+    cursor: pointer;
+    
+}
+
+.card:hover {
+    opacity: 0.7;
+    transform: scale(1.005);
+}
+
+.card:hover button {
+    visibility: visible;
+}

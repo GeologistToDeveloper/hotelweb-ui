@@ -3,6 +3,7 @@ import styles from "./CustomerNavBar.module.css";
 import LoginButton from "./LoginButton";
 
 const CustomerNavBar = () => {
+  // alert("Cus Nav bar");
   return (
     <ul className={styles.navbar}>
       <NavLink
@@ -29,7 +30,7 @@ const CustomerNavBar = () => {
       >
         <li>Profile</li>
       </NavLink>
-      <LoginButton/>
+      <LoginButton />
     </ul>
   );
 };

@@ -12,7 +12,36 @@ const Login = () => {
   const dispatch = useDispatch();
   const [loginState, setLoginState] = useState(true);
 
-  const customerLoginHandler = () => {};
+  const customerLoginHandler = (evt) => {
+    evt.preventDefault();
+    const username = evt.target.username.value;
+    const password = evt.target.password.value;
+    fetch("http://localhost:8080/login", {
+      method: "post",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: username,
+        password: password,
+      }),
+    })
+      .then((res) => {
+        if (res.status === 401) {
+          return alert("Invalid Credentials!");
+        }
+        return res.json().then((resData) => {
+          localStorage.setItem("tokenC", resData.token);
+          localStorage.setItem("userId", resData.userId);
+          dispatch(centralActions.customerFlip());
+          navigate("/", { replace: true });
+          window.location.reload(false);
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   const ownerLoginHandler = (evt) => {
     evt.preventDefault();

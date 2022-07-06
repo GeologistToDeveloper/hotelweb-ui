@@ -44,7 +44,7 @@ const Signup = (props) => {
       })
       .then(resData => {
         localStorage.setItem('userId',resData.userId);
-        localStorage.setItem('token',resData.token);
+        localStorage.setItem('tokenC',resData.token);
         navigate("/", { replace: true });
       })
       .catch((err) => console.log(err));
